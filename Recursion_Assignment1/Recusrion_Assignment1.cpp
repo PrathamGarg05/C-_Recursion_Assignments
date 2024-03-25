@@ -19,6 +19,7 @@ using namespace std;
 
 //answer3
 bool powerOf2(int n){
+    if(n==0) return false;
     if(n==1) return true;
     if(n%2==0) return powerOf2(n/2);
     return false;
